@@ -47,7 +47,7 @@ export default function NotFound() {
             </motion.div>
           </div>
 
-          <h1 className="text-4xl font-bold text-gray-700 dark:text-gray-400">
+          <h1 className="text-2xl font-bold text-gray-700 dark:text-gray-400">
             Page en maintenance, Devlin va y jeter un coup d&apos;oeil
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 mt-2">
