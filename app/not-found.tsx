@@ -2,12 +2,11 @@
 
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Settings } from "lucide-react";
-import Link from "next/link";
+import Link from "next/link"; // Correction de l'import
 
-export default function MaintenancePage() {
+export default function NotFound() {
   return (
     <div className="flex flex-col h-screen">
       <Header />
@@ -49,14 +48,19 @@ export default function MaintenancePage() {
           </div>
 
           <h1 className="text-4xl font-bold text-gray-700 dark:text-gray-400">
-            Page en maintenance,Devlin va y jeter un coup d&apos;oeil
+            Page en maintenance, Devlin va y jeter un coup d&apos;oeil
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 mt-2">
             Cette page est temporairement indisponible.
           </p>
-          <Button asChild className="mt-6">
-            <Link href="/">Retour à l&apos;accueil</Link>
-          </Button>
+
+          {/* ✅ Bouton stylisé avec un fond jaune */}
+          <Link
+            href="/"
+            className="mt-6 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-md shadow-md hover:bg-yellow-600 transition duration-300"
+          >
+            Retour à l&apos;accueil
+          </Link>
         </motion.div>
       </div>
       <Footer />

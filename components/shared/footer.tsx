@@ -1,3 +1,5 @@
+"use client";
+
 import { APP_NAME } from "@/lib/constants";
 import { ChevronUp } from "lucide-react";
 import Link from "next/link";
